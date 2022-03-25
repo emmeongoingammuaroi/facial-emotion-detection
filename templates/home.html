@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Emotion Detection {% endblock title %} 
+
+{% block content %}
+<div class="container" id="main">
+  <h1>Emotion Detection</h1>
+  <a type="button" class="btn btn-success" href="{% url 'image_process' %}" id='image-link'>Import Image</a>
+  <a type="button" class="btn btn-primary" href="{% url 'stream_process' %}" id='stream-link'>Stream Webcam</a>
+</div>
+{% endblock content %}
